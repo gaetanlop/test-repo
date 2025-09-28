@@ -1,5 +1,2 @@
-# this is a test file
-x = 1+2
+from tranformers import AutoModelForCausalLM
 
-print(x)
-#great

@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=42","setuptools-scm","wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name="spellcaster"
+dynamic=["version"]
+description="Repo for the SpellCaster project"
+readme="README.md"
+requires-python=">=3.11"
+classifiers = ["Programming Language :: Python :: 3"]
+dependencies = [
+    "transformers",
+    "peft",
+    "datasets",
+    "webdataset",
+]
+
+[tool.setuptools.packages.find]
+where=["src"]
+
+[tool.setuptools_scm]
+write_to="_version.py"
